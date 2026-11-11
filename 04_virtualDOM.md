@@ -1,5 +1,7 @@
 # React Rendering Process (Interview Revision)
-
+```link
+https://github.com/acdlite/react-fiber-architecture
+```
 ## createRoot()
 
 ```jsx
@@ -7,6 +9,7 @@ createRoot(document.getElementById("root")).render(<App />);
 ```
 
 - `createRoot()` creates React's root container.
+- `createRoot()` creates a React root container and mounts the React application to a DOM element.  During rendering, React creates and manages the Virtual DOM internally.
 - React builds a **Virtual DOM tree** (JavaScript object representation of UI).
 - React does **not directly manipulate the Browser DOM** on every update.
 
