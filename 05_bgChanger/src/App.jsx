@@ -1,7 +1,4 @@
 import { useState } from 'react'
-import heroImg from './assets/hero.png'
-import reactLogo from './assets/react.svg'
-import viteLogo from './assets/vite.svg'
 import './App.css'
 
 function App() {
@@ -16,11 +13,9 @@ function App() {
     <button class="rounded-xl bg-blue-500 px-6 py-3 font-medium text-white transition hover:bg-blue-600 hover:scale-105" onClick={()=>colorChanger("blue")}>
       Home
     </button>
-
     <button class="rounded-xl bg-emerald-500 px-6 py-3 font-medium text-white transition hover:bg-emerald-600 hover:scale-105" onClick={()=>colorChanger("rgb(16, 185, 129)")}>
       Search
     </button>
-
     <button class="rounded-xl bg-purple-500 px-6 py-3 font-medium text-white transition hover:bg-purple-600 hover:scale-105" onClick={()=>colorChanger("purple")}>
       Profile
     </button>
