@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import './App.css'
-import Inputbox from './components/Inputbox'
+import { Inputbox } from './components'
 import UseFetchCurrency from './hooks/UseFetchCurrency'
 function App() {
   
@@ -17,7 +17,7 @@ function App() {
   return (
     <>
       <div className="h-screen bg-cover bg-center flex items-center justify-center"
-  style={{backgroundImage: "url('https://tse4.mm.bing.net/th/id/OIP.BsZanXwvUfauO0YOSE5wHwHaDt?r=0&rs=1&pid=ImgDetMain&o=7&rm=3')"}}>
+  style={{backgroundImage: "url('https://wallpaperbat.com/img/2080854-foreign-exchange.jpg')"}}>
       <form onSubmit={(e)=>{
         e.preventDefault();
         converter()
