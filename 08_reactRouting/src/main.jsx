@@ -4,8 +4,9 @@ import './index.css'
 import App from './App.jsx'
 import { createBrowserRouter } from "react-router";
 import { RouterProvider } from "react-router/dom";
-import {Main, About} from './components'
-import Layout from './layout.jsx';
+import {Main, About , Contact,User , GithubCard} from './components'
+import Layout from './layout.jsx'; 
+import {dataLoader} from './components/github/GithubCard.jsx';
 
 let router = createBrowserRouter([
   {
@@ -23,7 +24,24 @@ let router = createBrowserRouter([
       {
         path: 'about/company',
         element: <h1>This is company DATA</h1>
-      }      
+      },
+      {
+        path: 'contact',
+        element: <Contact/>
+      },
+      {
+        path: 'user',
+        element: <User/>
+      },
+      {
+        path: 'user/:userID',
+        element: <User/>
+      },
+      {
+        path: "github",
+        element : <GithubCard/>,
+        loader : dataLoader
+      }
     ]
   }
 ])
